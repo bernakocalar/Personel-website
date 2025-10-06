@@ -11,6 +11,7 @@ import {
   User,
   MessageSquare,
 } from "lucide-react";
+import ShaderBackground from "./components/ShaderBackground";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,12 +26,12 @@ export default function App() {
     {
       title: "Readixon",
       description:
-        "React ve Node.js kullanarak geliştirilen modern bir e-kitap uygulaması",
+        "React ve Express.js kullanarak geliştirilen modern bir e-kitap uygulaması",
       tech: ["React", "Node.js", "PostgreSQL", "MUI"],
       link: "https://www.readixon.com",
     },
     {
-      title: "Task Yönetim Uygulaması",
+      title: "Mozena Web sitesi",
       description: "Ekip çalışması için geliştirilmiş proje yönetim aracı",
       tech: ["Vue.js", "Firebase", "Tailwind"],
       link: "#",
@@ -68,75 +69,56 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-      {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md z-50 border-b border-purple-500/20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Portfolio
-            </div>
+    <div
+      style={{ position: "relative", minHeight: "100vh", overflow: "hidden" }}
+    >
+      <main style={{ position: "relative", zIndex: 1, padding: 24 }}>
+    <nav className="top-0 w-full h-16 overflow-hidden z-50 border-b border-purple-500/20 relative">
+  <div className="absolute inset-0">
+    <ShaderBackground />
+  </div>
 
-            {/* Desktop Menu */}
-            <div className="hidden md:flex space-x-8">
-              {["hakkimda", "yetenekler", "projeler", "iletisim"].map(
-                (item) => (
-                  <button
-                    key={item}
-                    onClick={() => scrollToSection(item)}
-                    className={`capitalize transition-colors ${
-                      activeSection === item
-                        ? "text-purple-400"
-                        : "text-gray-300 hover:text-purple-400"
-                    }`}
-                  >
-                    {item === "hakkimda"
-                      ? "Hakkımda"
-                      : item === "yetenekler"
-                      ? "Yetenekler"
-                      : item === "projeler"
-                      ? "Projeler"
-                      : "İletişim"}
-                  </button>
-                )
-              )}
-            </div>
+  {/* Navbar içeriği */}
+  <div className="relative bg-slate-900/50 backdrop-blur-md h-full">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
+      <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+        Portfolio
+      </div>
 
-            {/* Mobile Menu Button */}
-            <button
-              className="md:hidden text-gray-300"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              {menuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
-        </div>
+      {/* Menü butonları */}
+      <div className="hidden md:flex space-x-8">
+        {["hakkimda", "yetenekler", "projeler", "iletisim"].map((item) => (
+          <button
+            key={item}
+            onClick={() => scrollToSection(item)}
+            className={`capitalize transition-colors ${
+              activeSection === item
+                ? "text-purple-400"
+                : "text-gray-300 hover:text-purple-400"
+            }`}
+          >
+            {item === "hakkimda"
+              ? "Hakkımda"
+              : item === "yetenekler"
+              ? "Yetenekler"
+              : item === "projeler"
+              ? "Projeler"
+              : "İletişim"}
+          </button>
+        ))}
+      </div>
 
-        {/* Mobile Menu */}
-        {menuOpen && (
-          <div className="md:hidden bg-slate-800/95 backdrop-blur-md">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              {["hakkimda", "yetenekler", "projeler", "iletisim"].map(
-                (item) => (
-                  <button
-                    key={item}
-                    onClick={() => scrollToSection(item)}
-                    className="block w-full text-left px-3 py-2 text-gray-300 hover:text-purple-400 hover:bg-slate-700/50 rounded-md capitalize"
-                  >
-                    {item === "hakkimda"
-                      ? "Hakkımda"
-                      : item === "yetenekler"
-                      ? "Yetenekler"
-                      : item === "projeler"
-                      ? "Projeler"
-                      : "İletişim"}
-                  </button>
-                )
-              )}
-            </div>
-          </div>
-        )}
-      </nav>
+      <button
+        className="md:hidden text-gray-300"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        {menuOpen ? <X size={24} /> : <Menu size={24} />}
+      </button>
+    </div>
+  </div>
+</nav>
+
+      </main>
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
