@@ -1,24 +1,24 @@
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, Star, Calendar, Film } from "lucide-react";
 
-export default function Series() {
+export default function Talents() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [movieData, setMovieData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [direction, setDirection] = useState(0);
 
-  const series = [
-    "breaking+bad",
-    "game+of+thrones",
-    "stranger+things",
-    "the+crown",
-    "the+mandalorian",
+  const movies = [
+    "avengers",
+    "inception",
+    "interstellar",
+    "parasite",
+    "lord+of+the+rings",
   ];
 
   useEffect(() => {
     const fetchAllMovies = async () => {
       setLoading(true);
-      const promises = series.map((title) =>
+      const promises = movies.map((title) =>
         fetch(`https://www.omdbapi.com/?t=${title}&apikey=3483465a`).then(
           (res) => res.json()
         )
@@ -47,10 +47,10 @@ export default function Series() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center">
+      <div className="min-h-screen  flex items-center justify-center">
         <div className="text-center">
           <Film className="w-16 h-16 text-purple-400 animate-pulse mx-auto mb-4" />
-          <p className="text-white text-xl">Diziler yükleniyor...</p>
+          <p className="text-white text-xl">Filmler yükleniyor...</p>
         </div>
       </div>
     );
@@ -77,7 +77,7 @@ export default function Series() {
                 <img
                   src={currentMovie.Poster}
                   alt={currentMovie.Title}
-                  className="relative w-full object-cover rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-300"
+                  className="relative w-full h-[500px] object-cover rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
 
@@ -166,6 +166,35 @@ export default function Series() {
           ))}
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes slideInRight {
+          from {
+            opacity: 0;
+            transform: translateX(50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        @keyframes slideInLeft {
+          from {
+            opacity: 0;
+            transform: translateX(-50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        .animate-slideInRight {
+          animation: slideInRight 0.5s ease-out;
+        }
+        .animate-slideInLeft {
+          animation: slideInLeft 0.5s ease-out;
+        }
+      `}</style>
     </div>
   );
 }

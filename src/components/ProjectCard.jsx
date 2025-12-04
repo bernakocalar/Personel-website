@@ -25,7 +25,7 @@ export default function ProjectCard({ project }) {
       <div className="grid md:grid-cols-2 gap-8 items-center p-8 md:p-12">
         {/* Sol: Resim Slider */}
         <div className="relative group">
-          <div className="absolute inset-0 bg-purple-500 rounded-2xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
+          <div className="absolute inset-0 bg-blue-500 rounded-2xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
           <div className="relative">
             <img
               key={currentImageIndex}
@@ -58,7 +58,7 @@ export default function ProjectCard({ project }) {
                       onClick={() => setCurrentImageIndex(idx)}
                       className={`transition-all duration-300 rounded-full ${
                         idx === currentImageIndex
-                          ? "w-8 h-2 bg-purple-500"
+                          ? "w-8 h-2 bg-blue-500"
                           : "w-2 h-2 bg-white/50 hover:bg-white/70"
                       }`}
                     />
@@ -75,7 +75,7 @@ export default function ProjectCard({ project }) {
             <h2 className="text-4xl font-bold text-white mb-2 leading-tight">
               {project.name}
             </h2>
-            <div className="flex items-center gap-4 text-purple-300">
+            <div className="flex items-center gap-4 text-blue-300">
               <span className="flex items-center gap-1 text-yellow-400">
                 {project.techStack}
               </span>
@@ -84,7 +84,7 @@ export default function ProjectCard({ project }) {
 
           <div className="space-y-4">
             <div>
-              <p className="text-purple-300 text-sm uppercase tracking-wider mb-1">
+              <p className="text-blue-300 text-sm uppercase tracking-wider mb-1">
                 Description
               </p>
               <p className="text-gray-300 leading-relaxed">
@@ -95,7 +95,7 @@ export default function ProjectCard({ project }) {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg transition-colors duration-300"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors duration-300"
             >
               Visit Project
             </a>

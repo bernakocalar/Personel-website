@@ -45,7 +45,7 @@ export default function Portfolyo() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 py-12 px-4">
+    <div className="min-h-screen  py-12 px-4">
       <div className="max-w-7xl mx-auto space-y-8">
         <h1 className="text-5xl font-bold text-white text-center mb-12">
           My Projects
