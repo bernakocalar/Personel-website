@@ -1,19 +1,19 @@
 import { Route, Routes } from "react-router";
-import Home from "./pages/HomePage";
-import Series from "./pages/Series";
-import Movies from "./pages/Movies";
 import Navbar from "./components/Navbar";
 import Portfolyo from "./pages/Portfolyo";
+import Talents from "./pages/Talents";
+import PersonalInfo from "./pages/Otobiyografi";
+import Favorites from "./pages/FavoriteThings";
 
 function App() {
   return (
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/series" element={<Series />} />,
-        <Route path="/movies" element={<Movies />} />
+        <Route path="/" element={<PersonalInfo />} />
+        <Route path="/favorites" element={<Favorites />} />,
         <Route path="/works" element={<Portfolyo />} />
+        <Route path="/talents" element={<Talents />} />
       </Routes>
     </>
   );

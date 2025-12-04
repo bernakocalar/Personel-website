@@ -1,0 +1,11 @@
+{
+  "welcome": "Hoş geldin",
+  "about": "Hakkımda",
+  "education": "Eğitim",
+  "navbar": {
+    "home": "ben kimim?",
+    "projects": "neler yaptım?",
+    "talents": "neler yapabilirim?",
+    "favorites": "favori şeyler"
+  }
+}

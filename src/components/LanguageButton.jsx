@@ -1,0 +1,19 @@
+import { useTranslation } from "react-i18next";
+
+export default function LanguageButton() {
+  const { i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === "tr" ? "en" : "tr";
+    i18n.changeLanguage(newLang);
+  };
+
+  return (
+    <button
+      onClick={toggleLanguage}
+      className="px-4 py-2 bg-blue-800 text-white rounded-lg"
+    >
+      {i18n.language === "tr" ? "EN" : "TR"}
+    </button>
+  );
+}

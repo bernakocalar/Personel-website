@@ -1,0 +1,11 @@
+{
+  "welcome": "Welcome",
+  "about": "About Me",
+  "education": "Education",
+  "navbar": {
+    "home": "who am I?",
+    "projects": "what have I done?",
+    "talents": "what can I do?",
+    "favorites": "favorite things"
+  }
+}
