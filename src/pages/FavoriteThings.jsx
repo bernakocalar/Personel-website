@@ -1,4 +1,4 @@
-import Movies from "../components/Movies";
+import Movies from "./Movies";
 
 export default function Favorites() {
   return (
