@@ -7,5 +7,13 @@
     "projects": "neler yaptım?",
     "talents": "neler yapabilirim?",
     "favorites": "favori şeyler"
-  }
+  },
+  "loading_movies": "Filmler yükleniyor...",
+  "loading_series": "Diziler yükleniyor...",
+  "genre": "Tür",
+  "director": "Yönetmen",
+  "actors": "Oyuncular",
+  "plot": "Özet",
+  "movies": "Filmler",
+  "series": "Diziler"
 }

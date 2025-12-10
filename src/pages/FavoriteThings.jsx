@@ -1,9 +1,11 @@
 import { useState } from "react";
 import Movies from "../components/Movies";
 import Series from "../components/Series";
+import { useTranslation } from "react-i18next";
 
 export default function Favorites() {
   const [tab, setTab] = useState("movies");
+  const { t } = useTranslation();
 
   return (
     <div className="p-4">
@@ -17,7 +19,7 @@ export default function Favorites() {
               : "bg-gray-200 text-gray-700"
           }`}
         >
-          Movies
+          {t("movies")}
         </button>
 
         <button
@@ -28,7 +30,7 @@ export default function Favorites() {
               : "bg-gray-200 text-gray-700"
           }`}
         >
-          Series
+          {t("series")}
         </button>
       </div>
 

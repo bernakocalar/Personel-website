@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, Star, Calendar, Film } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function Series() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [movieData, setMovieData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [direction, setDirection] = useState(0);
+  const { t } = useTranslation();
 
   const series = [
     "breaking+bad",
@@ -19,9 +21,11 @@ export default function Series() {
     const fetchAllMovies = async () => {
       setLoading(true);
       const promises = series.map((title) =>
-        fetch(`https://www.omdbapi.com/?t=${title}&apikey=3483465a`).then(
-          (res) => res.json()
-        )
+        fetch(
+          `https://www.omdbapi.com/?t=${title}&apikey=${
+            import.meta.env.VITE_OMDB_API_KEY
+          }`
+        ).then((res) => res.json())
       );
       const results = await Promise.all(promises);
       setMovieData(results);
@@ -50,13 +54,17 @@ export default function Series() {
       <div className="min-h-screen  flex items-center justify-center">
         <div className="text-center">
           <Film className="w-16 h-16 text-purple-400 animate-pulse mx-auto mb-4" />
-          <p className="text-white text-xl">Diziler yükleniyor...</p>
+          <p className="text-white text-xl">{t("loading_series")}</p>
         </div>
       </div>
     );
   }
 
   const currentMovie = movieData[currentIndex];
+  const highResPoster = currentMovie.Poster.replace(
+    "._V1_SX300",
+    "._V1_SX1200"
+  );
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
@@ -75,8 +83,7 @@ export default function Series() {
               <div className="relative group">
                 <div className="absolute inset-0 bg-purple-500 rounded-2xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
                 <img
-                  src={currentMovie.Poster}
-                  s
+                  src={highResPoster}
                   alt={currentMovie.Title}
                   className="relative w-full object-cover rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-300"
                 />
@@ -103,14 +110,14 @@ export default function Series() {
                 <div className="space-y-4">
                   <div>
                     <p className="text-purple-300 text-sm uppercase tracking-wider mb-1">
-                      Tür
+                      {t("genre")}
                     </p>
                     <p className="text-white text-lg">{currentMovie.Genre}</p>
                   </div>
 
                   <div>
                     <p className="text-purple-300 text-sm uppercase tracking-wider mb-1">
-                      Yönetmen
+                      {t("director")}
                     </p>
                     <p className="text-white text-lg">
                       {currentMovie.Director}
@@ -119,14 +126,14 @@ export default function Series() {
 
                   <div>
                     <p className="text-purple-300 text-sm uppercase tracking-wider mb-1">
-                      Oyuncular
+                      {t("actors")}
                     </p>
                     <p className="text-white text-lg">{currentMovie.Actors}</p>
                   </div>
 
                   <div>
                     <p className="text-purple-300 text-sm uppercase tracking-wider mb-1">
-                      Özet
+                      {t("plot")}
                     </p>
                     <p className="text-gray-300 leading-relaxed">
                       {currentMovie.Plot}

@@ -1,51 +1,16 @@
-import { User, Code, Briefcase, Heart, GraduationCap } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useEffect, useState, createElement } from "react";
+import * as LucideIcons from "lucide-react";
 
 export default function PersonalInfo() {
   const { t } = useTranslation();
-  const informations = [
-    {
-      icon: User,
-      subtitle: "Who I Am",
-      content:
-        "Hi! I'm Berna Kocalar, a passionate web developer with a love for creating beautiful and functional websites.",
-      image: "/profile.jpg",
-      color: "blue",
-    },
-    {
-      icon: GraduationCap,
-      subtitle: "Academic Background",
-      content: "Hacettepe University - Bachelor's Degree.",
-      image: "/education.jpg",
-      color: "blue",
-    },
-    {
-      icon: Briefcase,
-      title: "Experience",
-      content:
-        "5+ years of web development experience, working with modern frameworks and technologies to build scalable applications.",
-      image: "/experience.jpg",
-      color: "green",
-    },
-    {
-      icon: Code,
-      title: "Skills",
-      subtitle: "Technical Expertise",
-      content:
-        "React, Next.js, TypeScript, TailwindCSS, Node.js, and more. Always learning and adapting to new technologies.",
-      image: "/skills.jpg",
-      color: "orange",
-    },
-    {
-      icon: Heart,
-      title: "Hobbies",
-      subtitle: "Beyond Coding",
-      content:
-        "When I'm not coding, I enjoy reading books, traveling to new places, and exploring the latest tech trends.",
-      image: "/hobbies.jpg",
-      color: "pink",
-    },
-  ];
+  const [informations, setInformations] = useState([]);
+
+  useEffect(() => {
+    fetch("/informatications.json")
+      .then((res) => res.json())
+      .then((data) => setInformations(data));
+  }, []);
 
   const colorClasses = {
     purple: "from-purple-500 to-purple-600",
@@ -67,7 +32,7 @@ export default function PersonalInfo() {
         {/* ALT ALTA TÜM KARTLAR */}
         <div className="space-y-20">
           {informations.map((info, index) => {
-            const IconComponent = info.icon;
+            const IconComponent = LucideIcons[info.icon];
 
             return (
               <div
@@ -83,7 +48,10 @@ export default function PersonalInfo() {
                           colorClasses[info.color]
                         } shadow-lg`}
                       >
-                        <IconComponent className="w-8 h-8 text-white" />
+                        {IconComponent &&
+                          createElement(IconComponent, {
+                            className: "w-8 h-8 text-white",
+                          })}
                       </div>
 
                       <div>

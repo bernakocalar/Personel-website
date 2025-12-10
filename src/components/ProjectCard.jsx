@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
+
 export default function ProjectCard({ project }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -85,7 +88,7 @@ export default function ProjectCard({ project }) {
           <div className="space-y-4">
             <div>
               <p className="text-blue-300 text-sm uppercase tracking-wider mb-1">
-                Description
+                {t("description")}
               </p>
               <p className="text-gray-300 leading-relaxed">
                 {project.description}
@@ -97,7 +100,7 @@ export default function ProjectCard({ project }) {
               rel="noopener noreferrer"
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors duration-300"
             >
-              Visit Project
+              {t("visit_project")}
             </a>
           </div>
         </div>

@@ -7,5 +7,13 @@
     "projects": "what have I done?",
     "talents": "what can I do?",
     "favorites": "favorite things"
-  }
+  },
+  "loading_movies": "Loading movies...",
+  "loading_series": "Loading series...",
+  "genre": "Genre",
+  "director": "Director",
+  "actors": "Actors",
+  "plot": "Plot",
+  "movies": "Movies",
+  "series": "Series"
 }
