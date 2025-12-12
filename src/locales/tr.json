@@ -15,5 +15,11 @@
   "actors": "Oyuncular",
   "plot": "Özet",
   "movies": "Filmler",
-  "series": "Diziler"
+  "series": "Diziler",
+  "description": "Açıklama",
+  "visit_project": "Projeyi Ziyaret Et",
+  "get_to_know_me": "Beni daha yakından tanıyın",
+  "showcase_skills": "Yeteneklerimin bir gösterimi",
+  "en": "EN",
+  "tr": "TR"
 }

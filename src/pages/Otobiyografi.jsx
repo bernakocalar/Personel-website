@@ -26,7 +26,7 @@ export default function PersonalInfo() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-6xl font-bold text-white mb-4">{t("welcome")}</h1>
-          <p className="text-blue-300 text-xl">Get to know me better</p>
+          <p className="text-blue-300 text-xl">{t("get_to_know_me")}</p>
         </div>
 
         {/* ALT ALTA TÜM KARTLAR */}

@@ -15,5 +15,11 @@
   "actors": "Actors",
   "plot": "Plot",
   "movies": "Movies",
-  "series": "Series"
+  "series": "Series",
+  "description": "Description",
+  "visit_project": "Visit Project",
+  "get_to_know_me": "Get to know me better",
+  "showcase_skills": "A showcase of my skills",
+  "en": "EN",
+  "tr": "TR"
 }

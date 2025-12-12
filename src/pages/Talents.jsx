@@ -18,7 +18,7 @@ export default function Talents() {
       <div className="w-full max-w-4xl">
         <div className="text-center mb-12">
           <h1 className="text-6xl font-bold text-white mb-4">{t("navbar.talents")}</h1>
-          <p className="text-gray-300 text-xl">A showcase of my skills</p>
+          <p className="text-gray-300 text-xl">{t("showcase_skills")}</p>
         </div>
 
         <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl shadow-2xl p-8 md:p-12">
