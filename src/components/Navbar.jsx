@@ -8,7 +8,6 @@ export default function Navbar() {
     { name: t("navbar.home"), path: "/" },
     { name: t("navbar.talents"), path: "/talents" },
     { name: t("navbar.projects"), path: "/works" },
-    { name: t("navbar.favorites"), path: "/favorites" },
   ];
   return (
     <section className="bg-transparent p-4">
