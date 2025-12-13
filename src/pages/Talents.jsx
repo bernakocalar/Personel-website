@@ -35,7 +35,7 @@ export default function Talents() {
                   </div>
                   <div className="w-full bg-slate-700 rounded-full h-2.5">
                     <div
-                      className="bg-blue-500 h-2.5 rounded-full"
+                      className="bg-blue-500 h-2.5 rounded-full animate-width-grow"
                       style={{ width: `${talent.level}%` }}
                     />
                   </div>

@@ -21,5 +21,36 @@
   "get_to_know_me": "Beni daha yakından tanıyın",
   "showcase_skills": "Yeteneklerimin bir gösterimi",
   "en": "EN",
-  "tr": "TR"
+  "tr": "TR",
+  "personalData": {
+    "whoIAm": {
+      "subtitle": "Ben Kimim",
+      "content": "Merhaba! Ben Berna Kocalar, güzel ve işlevsel web siteleri oluşturma tutkusu olan bir web geliştiricisiyim."
+    },
+    "academicBackground": {
+      "subtitle": "Akademik Geçmiş",
+      "content": "Hacettepe Üniversitesi - Lisans Derecesi."
+    },
+    "experience": {
+      "title": "Deneyim",
+      "content": "Ölçeklenebilir uygulamalar oluşturmak için modern frameworkler ve teknolojilerle çalışan 5+ yıllık web geliştirme deneyimi."
+    },
+    "skills": {
+      "title": "Yetenekler",
+      "subtitle": "Teknik Uzmanlık",
+      "content": "React, Next.js, TypeScript, TailwindCSS, Node.js ve daha fazlası. Her zaman öğreniyor ve yeni teknolojilere uyum sağlıyorum."
+    },
+    "hobbies": {
+      "title": "Hobiler",
+      "subtitle": "Kodlamanın Ötesinde",
+      "content": "Kod yazmadığım zamanlarda kitap okumaktan, yeni yerlere seyahat etmekten ve en son teknoloji trendlerini keşfetmekten hoşlanırım."
+    }
+  },
+  "services": {
+    "readixon": "Kullanıcıların en sevdikleri kitapların incelemelerini okuyup paylaşabilecekleri bir kitap inceleme platformu.",
+    "nestforyou": "Kişisel projeleri ve fikirleri paylaşmak ve düzenlemek için bir platform.",
+    "movieapp": "Filmlere göz atmak, detayları görüntülemek ve izleme listeleri oluşturmak için bir uygulama.",
+    "weatherapp": "Tahminler ve güncel koşulları sağlayan gerçek zamanlı bir hava durumu uygulaması.",
+    "taskmanager": "Günlük görevleri yönetmek ve ekiplerle işbirliği yapmak için bir üretkenlik aracı."
+  }
 }

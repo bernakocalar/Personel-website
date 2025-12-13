@@ -21,5 +21,36 @@
   "get_to_know_me": "Get to know me better",
   "showcase_skills": "A showcase of my skills",
   "en": "EN",
-  "tr": "TR"
+  "tr": "TR",
+  "personalData": {
+    "whoIAm": {
+      "subtitle": "Who I Am",
+      "content": "Hi! I'm Berna Kocalar, a passionate web developer with a love for creating beautiful and functional websites."
+    },
+    "academicBackground": {
+      "subtitle": "Academic Background",
+      "content": "Hacettepe University - Bachelor's Degree."
+    },
+    "experience": {
+      "title": "Experience",
+      "content": "5+ years of web development experience, working with modern frameworks and technologies to build scalable applications."
+    },
+    "skills": {
+      "title": "Skills",
+      "subtitle": "Technical Expertise",
+      "content": "React, Next.js, TypeScript, TailwindCSS, Node.js, and more. Always learning and adapting to new technologies."
+    },
+    "hobbies": {
+      "title": "Hobbies",
+      "subtitle": "Beyond Coding",
+      "content": "When I'm not coding, I enjoy reading books, traveling to new places, and exploring the latest tech trends."
+    }
+  },
+  "services": {
+    "readixon": "A book review platform where users can read and share reviews of their favorite books.",
+    "nestforyou": "A platform for sharing and organizing personal projects and ideas.",
+    "movieapp": "An application to browse movies, view details, and create watchlists.",
+    "weatherapp": "A real-time weather application providing forecasts and current conditions.",
+    "taskmanager": "A productivity tool for managing daily tasks and collaborating with teams."
+  }
 }

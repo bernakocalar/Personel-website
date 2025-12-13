@@ -1,16 +1,11 @@
 import { useTranslation } from "react-i18next";
 import { useEffect, useState, createElement } from "react";
 import * as LucideIcons from "lucide-react";
+import { getPersonalData } from "../data";
 
-export default function PersonalInfo() {
+export default function Autobiography() {
   const { t } = useTranslation();
-  const [informations, setInformations] = useState([]);
-
-  useEffect(() => {
-    fetch("/informatications.json")
-      .then((res) => res.json())
-      .then((data) => setInformations(data));
-  }, []);
+  const informations = getPersonalData(t);
 
   const colorClasses = {
     purple: "from-purple-500 to-purple-600",
@@ -37,16 +32,16 @@ export default function PersonalInfo() {
             return (
               <div
                 key={index}
-                className="relative overflow-hidden rounded-3xl shadow-2xl bg-gradient-to-br from-slate-800 to-slate-900 p-8 md:p-12"
+                className="relative overflow-hidden rounded-3xl shadow-2xl bg-gradient-to-br from-slate-800 to-slate-900 p-8 md:p-12 animate-slide-up"
+                style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   {/* Right: Information */}
                   <div className="space-y-6">
                     <div className="space-y-4">
                       <div
-                        className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${
-                          colorClasses[info.color]
-                        } shadow-lg`}
+                        className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${colorClasses[info.color]
+                          } shadow-lg`}
                       >
                         {IconComponent &&
                           createElement(IconComponent, {

@@ -1,18 +1,18 @@
 import { Route, Routes } from "react-router";
 import Navbar from "./components/Navbar";
-import Portfolyo from "./pages/Portfolyo";
+import Portfolio from "./pages/Portfolio";
 import Talents from "./pages/Talents";
-import PersonalInfo from "./pages/Otobiyografi";
-import Favorites from "./pages/FavoriteThings";
+import Autobiography from "./pages/Autobiography";
+import Favorites from "./pages/Favorites";
 
 function App() {
   return (
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<PersonalInfo />} />
-        <Route path="/favorites" element={<Favorites />} />,
-        <Route path="/works" element={<Portfolyo />} />
+        <Route path="/" element={<Autobiography />} />
+        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/works" element={<Portfolio />} />
         <Route path="/talents" element={<Talents />} />
       </Routes>
     </>
