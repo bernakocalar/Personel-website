@@ -47,9 +47,9 @@
     }
   },
   "services": {
-    "readixon": "A book review platform where users can read and share reviews of their favorite books.",
+    "readixon": "A Wattpad-like platform for writers to create, publish, and share their stories with a community.",
     "nestforyou": "A platform for sharing and organizing personal projects and ideas.",
-    "movieapp": "An application to browse movies, view details, and create watchlists.",
+    "movieapp": "An IMDb-like personal movie tracker with private reviews and detailed insights.",
     "weatherapp": "A real-time weather application providing forecasts and current conditions.",
     "taskmanager": "A productivity tool for managing daily tasks and collaborating with teams."
   }

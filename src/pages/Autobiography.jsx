@@ -20,10 +20,8 @@ export default function Autobiography() {
       <div className="w-full max-w-6xl">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-7xl font-bold text-white mb-4">{t("welcome")}</h1>
-          <p className="text-blue-300 text-2xl">{t("get_to_know_me")}</p>
-        </div>
 
+        </div>
         {/* ALT ALTA TÜM KARTLAR */}
         <div className="space-y-20">
           {informations.map((info, index) => {
@@ -53,13 +51,13 @@ export default function Autobiography() {
                         <p className="text-blue-300 text-sm uppercase tracking-wider mb-1">
                           {info.subtitle}
                         </p>
-                        <h2 className="text-6xl font-bold text-white leading-tight">
+                        <h2 className="text-3xl font-bold text-white leading-tight">
                           {info.title}
                         </h2>
                       </div>
                     </div>
 
-                    <p className="text-gray-300 text-3xl leading-relaxed">
+                    <p className="text-gray-300 text-lg leading-relaxed">
                       {info.content}
                     </p>
                   </div>

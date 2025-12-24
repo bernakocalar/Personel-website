@@ -34,7 +34,8 @@ export default function ProjectCard({ project }) {
               key={currentImageIndex}
               src={project.images[currentImageIndex]}
               alt={`${project.name} - ${currentImageIndex + 1}`}
-              className="relative w-full h-80 object-cover rounded-2xl shadow-2xl transition-all duration-500"
+              className="relative w-full h-96 object-cover rounded-2xl shadow-2xl transition-all duration-500"
+
             />
 
             {/* Resim navigasyon butonları - içeride */}
@@ -59,11 +60,10 @@ export default function ProjectCard({ project }) {
                     <button
                       key={idx}
                       onClick={() => setCurrentImageIndex(idx)}
-                      className={`transition-all duration-300 rounded-full ${
-                        idx === currentImageIndex
-                          ? "w-8 h-2 bg-blue-500"
-                          : "w-2 h-2 bg-white/50 hover:bg-white/70"
-                      }`}
+                      className={`transition-all duration-300 rounded-full ${idx === currentImageIndex
+                        ? "w-8 h-2 bg-blue-500"
+                        : "w-2 h-2 bg-white/50 hover:bg-white/70"
+                        }`}
                     />
                   ))}
                 </div>

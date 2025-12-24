@@ -47,9 +47,9 @@
     }
   },
   "services": {
-    "readixon": "Kullanıcıların en sevdikleri kitapların incelemelerini okuyup paylaşabilecekleri bir kitap inceleme platformu.",
+    "readixon": "Yazarların hikayelerini oluşturup paylaşabileceği Wattpad benzeri bir platform.",
     "nestforyou": "Kişisel projeleri ve fikirleri paylaşmak ve düzenlemek için bir platform.",
-    "movieapp": "Filmlere göz atmak, detayları görüntülemek ve izleme listeleri oluşturmak için bir uygulama.",
+    "movieapp": "Kişisel film takibi yapabileceğiniz ve gizli incelemeler ekleyebileceğiniz IMDb benzeri bir uygulama.",
     "weatherapp": "Tahminler ve güncel koşulları sağlayan gerçek zamanlı bir hava durumu uygulaması.",
     "taskmanager": "Günlük görevleri yönetmek ve ekiplerle işbirliği yapmak için bir üretkenlik aracı."
   }

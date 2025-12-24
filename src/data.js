@@ -45,7 +45,7 @@ export const getWorksData = (t) => [
         name: "readixon",
         images: ["/readixon.png", "/readixon2.png", "/readixon3.png"],
         link: "https://readixon.com",
-        techStack: "React, TailwindCSS",
+        techStack: "React, ShadcnUI,Express.js,PostgreSQL",
         description: t("services.readixon"),
     },
     {
@@ -57,9 +57,9 @@ export const getWorksData = (t) => [
     },
     {
         name: "movieapp",
-        images: ["/movieapp.png", "/movieapp2.png", "/movieapp3.png"],
+        images: ["/movieApp.png", "/movieApp2.png", "/movieApp3.png"],
         link: "https://movie-app-three-pi-68.vercel.app/",
-        techStack: "React, TailwindCSS",
+        techStack: "React, TailwindCSS,i18n",
         description: t("services.movieapp"),
     },
     {
