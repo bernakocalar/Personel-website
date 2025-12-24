@@ -3,10 +3,10 @@
   "about": "Hakkımda",
   "education": "Eğitim",
   "navbar": {
-    "home": "ben kimim?",
-    "projects": "neler yaptım?",
-    "talents": "neler yapabilirim?",
-    "favorites": "favori şeyler"
+    "home": "Ben Kimim?",
+    "projects": "Neler Yaptım?",
+    "talents": "Neler Yapabilirim?",
+    "favorites": "Favori Şeyler"
   },
   "loading_movies": "Filmler yükleniyor...",
   "loading_series": "Diziler yükleniyor...",
