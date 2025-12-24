@@ -58,7 +58,7 @@ export const getWorksData = (t) => [
     {
         name: "movieapp",
         images: ["/movieapp.png", "/movieapp2.png", "/movieapp3.png"],
-        link: "https://movieapp.com",
+        link: "https://movie-app-three-pi-68.vercel.app/",
         techStack: "React, TailwindCSS",
         description: t("services.movieapp"),
     },
