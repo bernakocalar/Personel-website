@@ -1,4 +1,4 @@
-import { BarChart, Code, Database, Brush, GitMerge, Server } from "lucide-react";
+import { BarChart, Code, Database, Brush, GitMerge, Server, Coffee } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export default function Talents() {
@@ -8,6 +8,8 @@ export default function Talents() {
     { name: "JavaScript", level: 95, icon: Code, color: "text-yellow-400" },
     { name: "HTML/CSS", level: 98, icon: Brush, color: "text-orange-400" },
     { name: "Node.js", level: 80, icon: Server, color: "text-green-400" },
+    { name: "Java", level: 90, icon: Coffee, color: "text-red-500" },
+    { name: "Spring Boot", level: 85, icon: Server, color: "text-green-500" },
     { name: "SQL", level: 75, icon: Database, color: "text-red-400" },
     { name: "Git", level: 85, icon: GitMerge, color: "text-purple-400" },
     { name: "Next.js", level: 88, icon: Code, color: "text-gray-400" },

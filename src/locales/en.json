@@ -25,30 +25,30 @@
   "personalData": {
     "whoIAm": {
       "subtitle": "Who I Am",
-      "content": "Hi! I'm Berna Kocalar, a passionate web developer with a love for creating beautiful and functional websites."
+      "content": "Hi! I'm Berna Kocalar, a passionate Full Stack Developer who loves building user-friendly and visually appealing web applications. I enjoy turning complex problems into simple, beautiful, and intuitive designs."
     },
     "academicBackground": {
-      "subtitle": "Academic Background",
-      "content": "Hacettepe University - Bachelor's Degree."
+      "subtitle": "Education",
+      "content": "I hold a Bachelor's Degree from Hacettepe University. Additionally, I completed a 6-month intensive Full Stack Development Bootcamp at Workintech, where I mastered modern web technologies."
     },
     "experience": {
       "title": "Experience",
-      "content": "5+ years of web development experience, working with modern frameworks and technologies to build scalable applications."
+      "content": "With over a year of hands-on experience in full-stack development, I have built various projects ranging from social platforms to personal tools, focusing on clean code and performance."
     },
     "skills": {
       "title": "Skills",
       "subtitle": "Technical Expertise",
-      "content": "React, Next.js, TypeScript, TailwindCSS, Node.js, and more. Always learning and adapting to new technologies."
+      "content": "I specialize in the JavaScript ecosystem, including React, Redux, Node.js, and Express. I am also proficient in Java, Spring Boot, SQL (PostgreSQL), and styling tools like TailwindCSS."
     },
     "hobbies": {
       "title": "Hobbies",
       "subtitle": "Beyond Coding",
-      "content": "When I'm not coding, I enjoy reading books, traveling to new places, and exploring the latest tech trends."
+      "content": "When I'm not coding, you can find me lost in the world of movies and TV series. I'm a total fangirl who loves diving into good stories! I also enjoy reading books and exploring new cultures."
     }
   },
   "services": {
     "readixon": "A Wattpad-like platform for writers to create, publish, and share their stories with a community.",
-    "nestforyou": "A platform for sharing and organizing personal projects and ideas.",
+    "athlor": "A platform for sharing sports events, featuring live streaming, chat, and social posts.",
     "movieapp": "An IMDb-like personal movie tracker with private reviews and detailed insights.",
     "weatherapp": "A real-time weather application providing forecasts and current conditions.",
     "taskmanager": "A productivity tool for managing daily tasks and collaborating with teams."

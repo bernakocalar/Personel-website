@@ -5,7 +5,7 @@ export const getPersonalData = (t) => [
         icon: "User",
         subtitle: t("personalData.whoIAm.subtitle"),
         content: t("personalData.whoIAm.content"),
-        image: "/profile.jpg",
+        image: "/profile.PNG",
         color: "blue",
     },
     {
@@ -49,19 +49,20 @@ export const getWorksData = (t) => [
         description: t("services.readixon"),
     },
     {
-        name: "nestforyou",
-        images: ["/nestforyou.png", "/nestforyou2.png", "/nestforyou3.png"],
-        link: "https://nestforyou.com",
-        techStack: "React, TailwindCSS",
-        description: t("services.nestforyou"),
-    },
-    {
         name: "movieapp",
         images: ["/movieApp.png", "/movieApp2.png", "/movieApp3.png"],
         link: "https://movie-app-three-pi-68.vercel.app/",
-        techStack: "React, TailwindCSS,i18n",
+        techStack: "React, TailwindCSS,i18n,Firebase",
         description: t("services.movieapp"),
     },
+    {
+        name: "athlor",
+        images: ["/athlor.png", "/athlor2.png", "/athlor3.png"],
+        link: "https://athlorx.com",
+        techStack: "React, TailwindCSS,i18n,Firebase",
+        description: t("services.athlor"),
+    },
+
     {
         name: "weatherapp",
         images: ["/weatherapp.png", "/weatherapp2.png", "/weatherapp3.png"],

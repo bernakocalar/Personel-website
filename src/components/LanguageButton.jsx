@@ -11,7 +11,7 @@ export default function LanguageButton() {
   return (
     <button
       onClick={toggleLanguage}
-      className="px-4 py-2 bg-blue-800 text-white rounded-lg"
+      className="px-4 py-2 bg-white/10 backdrop-blur-md border border-white/10 text-white rounded-lg hover:bg-white/20 transition-all"
     >
       {i18n.language === "tr" ? t("en") : t("tr")}
     </button>

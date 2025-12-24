@@ -25,30 +25,30 @@
   "personalData": {
     "whoIAm": {
       "subtitle": "Ben Kimim",
-      "content": "Merhaba! Ben Berna Kocalar, güzel ve işlevsel web siteleri oluşturma tutkusu olan bir web geliştiricisiyim."
+      "content": "Merhaba! Ben Berna Kocalar, kullanıcı dostu ve görsel olarak etkileyici web uygulamaları geliştirmeyi seven tutkulu bir Full Stack Geliştiricisiyim. Karmaşık problemleri basit, güzel ve sezgisel tasarımlara dönüştürmekten keyif alıyorum."
     },
     "academicBackground": {
-      "subtitle": "Akademik Geçmiş",
-      "content": "Hacettepe Üniversitesi - Lisans Derecesi."
+      "subtitle": "Eğitim",
+      "content": "Hacettepe Üniversitesi'nden lisans derecesine sahibim. Ayrıca Workintech'te modern web teknolojilerinde uzmanlaştığım 6 aylık yoğun bir Full Stack Geliştirme eğitimini tamamladım."
     },
     "experience": {
       "title": "Deneyim",
-      "content": "Ölçeklenebilir uygulamalar oluşturmak için modern frameworkler ve teknolojilerle çalışan 5+ yıllık web geliştirme deneyimi."
+      "content": "Full-stack geliştirme alanında 1 yılı aşkın tecrübemle, temiz kod ve performans odaklı, sosyal platformlardan kişisel araçlara kadar çeşitli projeler geliştirdim."
     },
     "skills": {
       "title": "Yetenekler",
       "subtitle": "Teknik Uzmanlık",
-      "content": "React, Next.js, TypeScript, TailwindCSS, Node.js ve daha fazlası. Her zaman öğreniyor ve yeni teknolojilere uyum sağlıyorum."
+      "content": "React, Redux, Node.js ve Express dahil olmak üzere JavaScript ekosisteminde uzmanım. Ayrıca Java, Spring Boot, SQL (PostgreSQL) ve TailwindCSS gibi araçlarda da yetkinim."
     },
     "hobbies": {
       "title": "Hobiler",
       "subtitle": "Kodlamanın Ötesinde",
-      "content": "Kod yazmadığım zamanlarda kitap okumaktan, yeni yerlere seyahat etmekten ve en son teknoloji trendlerini keşfetmekten hoşlanırım."
+      "content": "Kod yazmadığım zamanlarda beni genellikle film ve dizi maratonu yaparken bulabilirsiniz. İyi hikayelerin içinde kaybolmaya bayılan tam bir fangirl'üm! ✨ Ayrıca kitap okumayı ve yeni kültürler keşfetmeyi de çok severim."
     }
   },
   "services": {
     "readixon": "Yazarların hikayelerini oluşturup paylaşabileceği Wattpad benzeri bir platform.",
-    "nestforyou": "Kişisel projeleri ve fikirleri paylaşmak ve düzenlemek için bir platform.",
+    "athlor": "Spor etkinliklerinin paylaşıldığı, canlı yayın, sohbet ve sosyal paylaşım özelliklerine sahip bir platform.",
     "movieapp": "Kişisel film takibi yapabileceğiniz ve gizli incelemeler ekleyebileceğiniz IMDb benzeri bir uygulama.",
     "weatherapp": "Tahminler ve güncel koşulları sağlayan gerçek zamanlı bir hava durumu uygulaması.",
     "taskmanager": "Günlük görevleri yönetmek ve ekiplerle işbirliği yapmak için bir üretkenlik aracı."
