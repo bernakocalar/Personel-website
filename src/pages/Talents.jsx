@@ -4,15 +4,15 @@ import { useTranslation } from "react-i18next";
 export default function Talents() {
   const { t } = useTranslation();
   const talents = [
-    { name: "React", level: 90, icon: Code, color: "text-blue-400" },
-    { name: "JavaScript", level: 95, icon: Code, color: "text-yellow-400" },
-    { name: "HTML/CSS", level: 98, icon: Brush, color: "text-orange-400" },
-    { name: "Node.js", level: 80, icon: Server, color: "text-green-400" },
-    { name: "Java", level: 90, icon: Coffee, color: "text-red-500" },
-    { name: "Spring Boot", level: 85, icon: Server, color: "text-green-500" },
-    { name: "SQL", level: 75, icon: Database, color: "text-red-400" },
-    { name: "Git", level: 85, icon: GitMerge, color: "text-purple-400" },
-    { name: "Next.js", level: 88, icon: Code, color: "text-gray-400" },
+    { name: "React", level: 75, icon: Code, color: "text-blue-400" },
+    { name: "JavaScript", level: 75, icon: Code, color: "text-yellow-400" },
+    { name: "HTML/CSS", level: 75, icon: Brush, color: "text-orange-400" },
+    { name: "Node.js", level: 65, icon: Server, color: "text-green-400" },
+    { name: "Java", level: 65, icon: Coffee, color: "text-red-500" },
+    { name: "Spring Boot", level: 65, icon: Server, color: "text-green-500" },
+    { name: "SQL", level: 60, icon: Database, color: "text-red-400" },
+    { name: "Git", level: 80, icon: GitMerge, color: "text-purple-400" },
+    { name: "Next.js", level: 75, icon: Code, color: "text-gray-400" },
   ];
 
   return (

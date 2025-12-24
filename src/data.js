@@ -63,12 +63,6 @@ export const getWorksData = (t) => [
         description: t("services.athlor"),
     },
 
-    {
-        name: "weatherapp",
-        images: ["/weatherapp.png", "/weatherapp2.png", "/weatherapp3.png"],
-        link: "https://weatherapp.com",
-        techStack: "React, TailwindCSS",
-        description: t("services.weatherapp"),
-    },
+
 
 ];
