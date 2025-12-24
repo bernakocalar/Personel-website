@@ -10,7 +10,7 @@ export default function Navbar() {
     { name: t("navbar.projects"), path: "/works" },
   ];
   return (
-    <section className="bg-transparent p-4">
+    <section className="bg-transparent p-4 absolute top-0 w-full z-10">
       <nav className="flex justify-between items-center text-white text-md">
         <ul className="flex gap-4 list-none m-0 p-0">
           {arrayForNavbar.map((item, index) => (

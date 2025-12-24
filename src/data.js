@@ -69,11 +69,5 @@ export const getWorksData = (t) => [
         techStack: "React, TailwindCSS",
         description: t("services.weatherapp"),
     },
-    {
-        name: "taskmanager",
-        images: ["/taskmanager.png", "/taskmanager2.png", "/taskmanager3.png"],
-        link: "https://taskmanager.com",
-        techStack: "React, TailwindCSS",
-        description: t("services.taskmanager"),
-    },
+
 ];
