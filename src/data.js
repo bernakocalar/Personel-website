@@ -49,11 +49,11 @@ export const getWorksData = (t) => [
         description: t("services.readixon"),
     },
     {
-        name: "movieapp",
+        name: "nestforyou",
         images: ["/movieApp.png", "/movieApp2.png", "/movieApp3.png"],
-        link: "https://movie-app-three-pi-68.vercel.app/",
+        link: "https://nestforyou.vercel.app/",
         techStack: "React, TailwindCSS,i18n,Firebase",
-        description: t("services.movieapp"),
+        description: t("services.nestforyou"),
     },
     {
         name: "athlor",

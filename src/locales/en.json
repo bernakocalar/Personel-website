@@ -49,7 +49,7 @@
   "services": {
     "readixon": "A Wattpad-like platform for writers to create, publish, and share their stories with a community.",
     "athlor": "A platform for sharing sports events, featuring live streaming, chat, and social posts.",
-    "movieapp": "An IMDb-like personal movie tracker with private reviews and detailed insights.",
+    "nestforyou": "An IMDb-like personal movie tracker with private reviews and detailed insights.",
     "weatherapp": "A real-time weather application providing forecasts and current conditions.",
     "taskmanager": "A productivity tool for managing daily tasks and collaborating with teams."
   }
